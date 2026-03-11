@@ -1,0 +1,248 @@
+/* src/styles/home.css */
+.home-page {
+  overflow-x: hidden;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: var(--white);
+}
+
+.welcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.welcome-content {
+  padding-right: 30px;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  /* color: var(--text-light); */
+  color: white;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.welcome-features {
+  margin-bottom: 30px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.feature-icon {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Stats Section */
+.stats-section {
+  background: var(--primary-color);
+  padding: 60px 0;
+  color: var(--white);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+  color: var(--white);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.stat-label {
+  font-size: 1rem;
+  /* opacity: 0.9; */
+  color: white;
+}
+
+/* Services Section */
+.services-section {
+  background: var(--background-light);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.services-cta {
+  text-align: center;
+}
+
+/* Gallery Section */
+.gallery-section {
+  background: var(--white);
+}
+
+/* Case Preview Section */
+.case-preview-section {
+  background: var(--background-light);
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.case-item {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.case-info {
+  padding: 20px;
+}
+
+.case-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.case-info p {
+  /* color: var(--text-light); */
+  font-size: 0.95rem;
+  color: white;
+}
+
+.case-before-after .before-after-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.before-after-slider .arrow {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.case-cta {
+  text-align: center;
+}
+
+/* CTA Section */
+.cta-section {
+  background:
+    linear-gradient(rgba(44, 125, 160, 0.9), rgba(44, 125, 160, 0.9)),
+    url("/images/clinic/clinic-exterior.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn-large {
+  padding: 15px 50px;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-grid,
+  .case-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-content {
+    padding-right: 0;
+    order: 2;
+  }
+
+  .welcome-image {
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    color: white;
+  }
+
+  .services-grid,
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .cta-section {
+    padding: 60px 0;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* now */
+/* src/styles/home.css */
+.page-top-spacer {
+  height: 80px; /* Height of 3 line breaks */
+  width: 100%;
+  display: block;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .page-top-spacer {
+    height: 80px; /* Slightly smaller on mobile */
+  }
+}
+
+.stat-label {
+  font-size: 1rem;
+  /* opacity: 0.9; */
+  color: white !important;
+}

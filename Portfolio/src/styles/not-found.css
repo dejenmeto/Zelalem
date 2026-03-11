@@ -1,0 +1,128 @@
+/* src/styles/not-found.css */
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, var(--background-light) 0%, #fff 100%);
+}
+
+.not-found-content {
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeInUp 0.6s ease;
+}
+
+.not-found-content h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 0 rgba(44, 125, 160, 0.1);
+  animation: pulse 2s infinite;
+}
+
+.not-found-content h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.not-found-content p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.not-found-content .btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: var(--transition);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.not-found-content .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(44, 125, 160, 0.3);
+}
+
+/* Optional: Add a cute animal illustration */
+.not-found-illustration {
+  margin-bottom: 30px;
+  font-size: 6rem;
+  opacity: 0.8;
+  animation: bounce 2s infinite;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .not-found-content h1 {
+    font-size: 6rem;
+  }
+
+  .not-found-content h2 {
+    font-size: 2rem;
+  }
+
+  .not-found-content p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .not-found-illustration {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .not-found-content h1 {
+    font-size: 4rem;
+  }
+
+  .not-found-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .not-found-content .btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}

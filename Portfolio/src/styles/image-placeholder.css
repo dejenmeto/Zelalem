@@ -1,0 +1,104 @@
+/* src/styles/image-placeholder.css */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-container.image-circle {
+  border-radius: 50%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover .image {
+  transform: scale(1.05);
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 1rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.placeholder-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Size variations */
+.image-small {
+  width: 200px;
+  height: 200px;
+}
+
+.image-medium {
+  width: 300px;
+  height: 300px;
+}
+
+.image-large {
+  width: 400px;
+  height: 400px;
+}
+
+.image-hero {
+  width: 100%;
+  height: 600px;
+}
+
+.image-full {
+  width: 100%;
+  height: 400px;
+}
+
+.image-rectangle {
+  width: 100%;
+  height: 250px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .image-hero {
+    height: 400px;
+  }
+
+  .image-large {
+    width: 300px;
+    height: 300px;
+  }
+}
