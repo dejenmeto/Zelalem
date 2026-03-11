@@ -1,8 +1,8 @@
 // src/components/Common/Resume.jsx
 import { useRef } from "react";
 import { generateResumePDF, downloadAsImage } from "../../utils/pdfGenerator";
-import { ImagePlaceholder } from "./ImagePlaceholder.jsx";
-// import ImagePlaceholder from "./ImagePlaceHolder.jsx";
+// import { ImagePlaceholder } from "./ImagePlaceholder.jsx";
+import ImagePlaceholder from "./ImagePlaceholder.jsx";
 import "../../styles/resume.css";
 
 const Resume = () => {
